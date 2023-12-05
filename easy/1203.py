@@ -19,7 +19,7 @@ def findCoords(lines):
 
     for y, line in enumerate(lines):
         for x, c in enumerate(list(line)):
-            if c != "." and not str.isalnum(c):
+            if c != "." and not str.isalnum(c) and c != "\n":
                 pCoords.append((y, x))
     return pCoords
 
